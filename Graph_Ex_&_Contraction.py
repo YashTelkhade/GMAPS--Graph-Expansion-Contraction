@@ -19,14 +19,17 @@ win = tk.Tk()
 win.title("Map Integration Project")
 win.geometry("{0}x{1}+0+0".format(win.winfo_screenwidth(), win.winfo_screenheight()))
 
-load=Image.open('C:\\Users\\dc\\Desktop\\DAAProjectGmaps\\gmapswall.jpg')
-#load = load.resize((1900,1100))
+# Add location of background image (provided in the repository)
+# eg. C:\\Users\\dc\\Desktop\\DAAProjectGmaps\\bg.jpg
+load=Image.open('')
+
 render = ImageTk.PhotoImage(load)
 img =tk.Label(win,image=render)
 img.image = render
 img.place(x=0,y=0)
 
 
+# Creating buttons for zoomin(+) zoom out(-).
 tk.Button(win, text="+", bg="#FC4C00", fg="white", width=5, height=2, command=lambda: zoomin(arr)).place(relx=0.88, rely=0.65, anchor=tk.CENTER)
 tk.Button(win, text="-", bg="orange", fg="white", width=5, height=2, command=lambda: zoomout(arr)).place(relx=0.88, rely=0.70, anchor=tk.CENTER)
 
