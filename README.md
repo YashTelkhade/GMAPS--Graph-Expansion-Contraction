@@ -51,10 +51,7 @@ Working:
 •	Whenever the “+” button is clicked, the Zoomin() function is called, which increases the number of locations displayed on the map, simultaneously the Data Structures tab is updated.
 •	Whenever the “-” button is clicked, the Zoomout() function is called, which decreases the number of locations displayed on the map, simultaneously the Data Structures tab is updated. 
 All the points which are visible on the map are printed on the left side of the screen.
-
-
-       
-GUI Screen Snip – 
+ 
 
 
 Other Practical Applications of GE&C
